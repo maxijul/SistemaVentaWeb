@@ -1,0 +1,14 @@
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.deps.json
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.runtimeconfig.json
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\bin\Debug\net6.0\SistemaVenta.Entity.pdb
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.csproj.AssemblyReference.cache
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.AssemblyInfoInputs.cache
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.AssemblyInfo.cs
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.csproj.CoreCompileInputs.cache
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\refint\SistemaVenta.Entity.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.pdb
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\SistemaVenta.Entity.genruntimeconfig.cache
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.Entity\obj\Debug\net6.0\ref\SistemaVenta.Entity.dll

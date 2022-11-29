@@ -1,0 +1,17 @@
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.BLL.deps.json
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.BLL.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.BLL.pdb
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.csproj.AssemblyReference.cache
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.AssemblyInfoInputs.cache
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.AssemblyInfo.cs
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.csproj.CoreCompileInputs.cache
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\refint\SistemaVenta.BLL.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.pdb
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\ref\SistemaVenta.BLL.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.DAL.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.Entity.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.DAL.pdb
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\bin\Debug\net6.0\SistemaVenta.Entity.pdb
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.BLL\obj\Debug\net6.0\SistemaVenta.BLL.csproj.CopyComplete
