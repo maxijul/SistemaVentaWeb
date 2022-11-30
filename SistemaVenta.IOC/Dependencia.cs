@@ -9,26 +9,30 @@ using SistemaVenta.DAL.DBContext;
 using Microsoft.EntityFrameworkCore;
 using SistemaVenta.DAL.Interfaces;
 using SistemaVenta.DAL.Implementacion;
-//using SistemaVenta.BLL.Interfaces;
-//using SistemaVenta.BLL.Implementacion;
+using SistemaVenta.BLL.Interfaces;
+using SistemaVenta.BLL.Implementacion;
 
 
 namespace SistemaVenta.IOC
 {
-    public static class Dependencia
+  public static class Dependencia
+  {
+    // Inyectamos la dependencia del DBContext
+    public static void InyectarDependencia(this IServiceCollection services, IConfiguration configuration)
     {
-        // Inyectamos la dependencia del DBContext
-        public static void InyectarDependencia(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddDbContext<DBVENTAContext>(options =>
-            {
-                options.UseSqlServer(configuration.GetConnectionString("CadenaSQL"));
-            });
+      services.AddDbContext<DBVENTAContext>(options =>
+      {
+        options.UseSqlServer(configuration.GetConnectionString("CadenaSQL"));
+      });
 
-            // Sirve para poder permitir cualquier entidad que respete la interfaz y la clase
-            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+      // Sirve para poder permitir cualquier entidad que respete la interfaz y la clase
+      services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
-            services.AddScoped<IVentaRepository, VentaRepository>();
-        }
+      services.AddScoped<IVentaRepository, VentaRepository>();
+
+      // Inyectamos la dependencia para el servicio de correo
+      services.AddScoped<ICorreoService, CorreoService>();
+
     }
+  }
 }
