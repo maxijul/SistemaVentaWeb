@@ -1,12 +1,1 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace SistemaVenta.AplicacionWeb
-{
-    public class _ : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
-}
+﻿.appsettings.json
