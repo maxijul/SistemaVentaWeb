@@ -27,12 +27,13 @@ namespace SistemaVenta.IOC
 
       // Sirve para poder permitir cualquier entidad que respete la interfaz y la clase
       services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
       services.AddScoped<IVentaRepository, VentaRepository>();
 
       // Inyectamos la dependencia para el servicio de correo
       services.AddScoped<ICorreoService, CorreoService>();
 
+      // Inyectamos la dependencia para el servicio de FireBase
+      services.AddScoped<IFireBaseService, FireBaseService>();
     }
   }
 }

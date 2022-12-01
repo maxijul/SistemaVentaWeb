@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "BHTJEYjL0/lNELyVRjqVsvFiHb9NIIE7ROUVBJq5SUCLGDFRaFxLR684eLcF+lifF5HAxAmXLyX3Ax4CCJYc4w==",
+  "dgSpecHash": "kFOVVbYWwmYSbjcwSvZI6xzO/SQlLkBYgMuRzGR9ciBKx8rY00oNbmv83rl6+Hr3GXs0B7X56Oyn/ZTKfLrObg==",
   "success": true,
   "projectFilePath": "D:\\ProyectosVisualStudio\\SistemaVentaWeb\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Facundo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Facundo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Facundo\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
+    "C:\\Users\\Facundo\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
     "C:\\Users\\Facundo\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Facundo\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Facundo\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
