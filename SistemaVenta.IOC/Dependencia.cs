@@ -37,6 +37,9 @@ namespace SistemaVenta.IOC
 
       // Inyectamos la dependencia para las utilidades
       services.AddScoped<IUtilidadesService, UtilidadesService>();
+
+      // Inyectamos la dependencia para los roles
+      services.AddScoped<IRolService, RolService>();
     }
   }
 }
