@@ -34,6 +34,9 @@ namespace SistemaVenta.IOC
 
       // Inyectamos la dependencia para el servicio de FireBase
       services.AddScoped<IFireBaseService, FireBaseService>();
+
+      // Inyectamos la dependencia para las utilidades
+      services.AddScoped<IUtilidadesService, UtilidadesService>();
     }
   }
 }
