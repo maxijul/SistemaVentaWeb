@@ -40,6 +40,9 @@ namespace SistemaVenta.IOC
 
       // Inyectamos la dependencia para los roles
       services.AddScoped<IRolService, RolService>();
+
+      // Inyectamos la dependencia para los usuarios
+      services.AddScoped<IUsuarioService, UsuarioService>();
     }
   }
 }
