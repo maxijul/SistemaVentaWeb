@@ -1,5 +1,5 @@
 using SistemaVenta.IOC;
-
+using SistemaVenta.AplicacionWeb.Utilidades.Automapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +8,8 @@ builder.Services.AddControllersWithViews();
 
 // A traves del metodo InyectarDependencia se agrega la funcionalidad que creamos en la clase Dependencia
 builder.Services.InyectarDependencia(builder.Configuration);
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 var app = builder.Build();
 

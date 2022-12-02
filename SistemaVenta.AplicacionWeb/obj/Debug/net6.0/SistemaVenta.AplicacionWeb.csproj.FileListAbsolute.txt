@@ -289,3 +289,5 @@ D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\ne
 D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Firebase.Auth.dll
 D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Firebase.Storage.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
