@@ -44,6 +44,7 @@ namespace SistemaVenta.BLL.Implementacion
           Host = config["host"],
           Port = int.Parse(config["puerto"]),
           DeliveryMethod = SmtpDeliveryMethod.Network,
+          Credentials = credenciales,
           UseDefaultCredentials = false,
           EnableSsl = true
         };

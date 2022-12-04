@@ -31,7 +31,7 @@ namespace SistemaVenta.BLL.Implementacion
 
         // Creamos la autorizacion
         var auth = new FirebaseAuthProvider(new FirebaseConfig(config["api_key"]));
-        var userCredentials = await auth.SignInWithEmailAndPasswordAsync(config["emial"], config["clave"]);
+        var userCredentials = await auth.SignInWithEmailAndPasswordAsync(config["email"], config["clave"]);
 
         // token de cancelacion
         var cancellation = new CancellationTokenSource();
