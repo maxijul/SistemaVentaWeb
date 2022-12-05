@@ -27,6 +27,8 @@ namespace SistemaVenta.IOC
 
       // Sirve para poder permitir cualquier entidad que respete la interfaz y la clase
       services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+      // Inyectamos la dependencia para el servicio de Venta
       services.AddScoped<IVentaRepository, VentaRepository>();
 
       // Inyectamos la dependencia para el servicio de correo
@@ -46,6 +48,9 @@ namespace SistemaVenta.IOC
 
       // Inyectamos la dependencia para el negocio
       services.AddScoped<INegocioService, NegocioService>();
+
+      // Inyectamos la dependencia para la categoria
+      services.AddScoped<ICategoriaService, CategoriaService>();
     }
   }
 }
