@@ -148,7 +148,7 @@ $("#btnGuardar").click(function () {
           $("#modalData").modal("hide")
           swal("Listo!", "El usuario fue creado con éxito", "success")
         } else {
-          swal("Lo sentimos!", responseJson.mensaje, "error")
+          swal("Lo sentimos", responseJson.mensaje, "error")
         }
       })
   } else {
@@ -214,7 +214,6 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
     closeOnCancel: true
   },
     function (respuesta) {
-      debugger
       if (respuesta) {
         $(".showSweetAlert").LoadingOverlay("show")
         
