@@ -64,6 +64,17 @@ namespace SistemaVenta.BLL.Implementacion
 
           HttpWebRequest request = (HttpWebRequest)WebRequest.Create(urlPlantillaCorreo);
           HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+          //var responsee = await Client.GetAsync(urlPlantillaCorreo);
+          //responsee.Content.ReadAsStream();
+
+          //if (responsee.IsSuccessStatusCode)
+          //{
+          //  using (Stream dataStream = responsee.Content.ReadAsStream())
+          //  {
+          //    responsee.Content
+          //  }
+          //}
           
           if(response.StatusCode == HttpStatusCode.OK)
           {
@@ -74,6 +85,7 @@ namespace SistemaVenta.BLL.Implementacion
                 reader = new StreamReader(dataStream);
               else
                 reader = new StreamReader(dataStream, Encoding.GetEncoding(response.CharacterSet));
+
 
               htmlCorreo = reader.ReadToEnd();
               response.Close();
