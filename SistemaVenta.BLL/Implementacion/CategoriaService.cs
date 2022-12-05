@@ -29,9 +29,9 @@ namespace SistemaVenta.BLL.Implementacion
       try
       {
         Categoria categoriaCreada = await _repositorio.Crear(entidad);
-        if(categoriaCreada.IdCategoria == 0)
+        if (categoriaCreada.IdCategoria == 0)
           throw new TaskCanceledException("No se pudo crear la categoria");
-        
+
         return categoriaCreada;
       }
       catch
@@ -50,7 +50,7 @@ namespace SistemaVenta.BLL.Implementacion
 
         bool respuesta = await _repositorio.Editar(categoriaEncontrada);
 
-        if(!respuesta)
+        if (!respuesta)
           throw new TaskCanceledException("No se pudo modificar la categoria");
 
         return categoriaEncontrada;
@@ -67,7 +67,7 @@ namespace SistemaVenta.BLL.Implementacion
       {
         Categoria categoriaEncontrada = await _repositorio.Obtener(c => c.IdCategoria == idCategoria);
 
-        if(categoriaEncontrada == null)
+        if (categoriaEncontrada == null)
           throw new TaskCanceledException("La categoria no existe");
 
         bool respuesta = await _repositorio.Eliminar(categoriaEncontrada);
