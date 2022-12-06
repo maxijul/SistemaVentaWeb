@@ -233,7 +233,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
               swal("Listo!", "El usuario fue eliminado con éxito", "success")
             } else {
-              swal("Lo sentimos!", responseJson.mensaje, "error")
+              swal("Lo sentimos", responseJson.mensaje, "error")
             }
           })
       }

@@ -50,7 +50,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
       }
       catch (Exception ex)
       {
-        genericResponse.Estado = true;
+        genericResponse.Estado = false;
         genericResponse.Mensaje = ex.Message;
       }
 
@@ -67,7 +67,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
       try
       {
         var categoriaMapeada = _mapper.Map<Categoria>(modelo);
-        Categoria categoriaEditada = await _categoriaService.Crear(categoriaMapeada);
+        Categoria categoriaEditada = await _categoriaService.Editar(categoriaMapeada);
 
         modelo = _mapper.Map<VMCategoria>(categoriaEditada);
 
@@ -76,11 +76,11 @@ namespace SistemaVenta.AplicacionWeb.Controllers
       }
       catch (Exception ex)
       {
-        genericResponse.Estado = true;
+        genericResponse.Estado = false;
         genericResponse.Mensaje = ex.Message;
       }
 
-      return StatusCode(StatusCodes.Status200OK, genericResponse);
+      return StatusCode(StatusCodes.Status201Created, genericResponse);
 
     }
 
@@ -96,7 +96,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
       }
       catch (Exception ex)
       {
-        genericResponse.Estado = true;
+        genericResponse.Estado = false;
         genericResponse.Mensaje = ex.Message;
       }
 
