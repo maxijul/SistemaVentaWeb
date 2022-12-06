@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZAfvvcWfsMjyn/Dh9z7BmzQNHO26fcgMucmpq241lvo=",
+  "Hash": "5OhRTOVLv+JnyCOoUbnkByyJWIjY7d0QOUKtJfgxhWk=",
   "Source": "SistemaVenta.AplicacionWeb",
   "BasePath": "_content/SistemaVenta.AplicacionWeb",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\sb-admin-2.min.js"
+    },
+    {
+      "Identity": "D:\\ProyectosVisualStudio\\SistemaVentaWeb\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Categoria_Index.js",
+      "SourceId": "SistemaVenta.AplicacionWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ProyectosVisualStudio\\SistemaVentaWeb\\SistemaVenta.AplicacionWeb\\wwwroot\\",
+      "BasePath": "_content/SistemaVenta.AplicacionWeb",
+      "RelativePath": "js/vistas/Categoria_Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\Categoria_Index.js"
     },
     {
       "Identity": "D:\\ProyectosVisualStudio\\SistemaVentaWeb\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\chart-bar-demo.js",
