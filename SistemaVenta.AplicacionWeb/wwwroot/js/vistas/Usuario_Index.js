@@ -93,7 +93,7 @@ function mostrarModal(modelo = MODELO_BASE) {
   $("#txtTelefono").val(modelo.telefono)
   $("#cboRol").val(modelo.idRol === 0 ? $("#cboRol option:first").val() : modelo.idRol)
   $("#cboEstado").val(modelo.esActivo)
-  $("#txtFoto").val()
+  $("#txtFoto").val("")
   $("#imgUsuario").attr("src", modelo.urlFoto)
 
   $("#modalData").modal("show")
@@ -167,7 +167,7 @@ $("#btnGuardar").click(function () {
           $("#modalData").modal("hide")
           swal("Listo!", "El usuario fue modificado con éxito", "success")
         } else {
-          swal("Lo sentimos!", responseJson.mensaje, "error")
+          swal("Lo sentimos", responseJson.mensaje, "error")
         }
       })
   }
@@ -217,7 +217,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
       if (respuesta) {
         $(".showSweetAlert").LoadingOverlay("show")
         
-        fetch(`/Usuario/Eliminar?IdUsuario=${data.idUsuario}`, {
+        fetch(`/Usuario/Eliminar?idUsuario=${data.idUsuario}`, {
           method: "DELETE"
         })
 

@@ -172,7 +172,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
       if (respuesta) {
         $(".showSweetAlert").LoadingOverlay("show")
 
-        fetch(`/Categoria/Eliminar?IdCategoria=${data.idCategoria}`, {
+        fetch(`/Categoria/Eliminar?idCategoria=${data.idCategoria}`, {
           method: "DELETE"
         })
 

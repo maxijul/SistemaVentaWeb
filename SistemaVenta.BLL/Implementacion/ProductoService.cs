@@ -10,7 +10,7 @@ using SistemaVenta.Entity.Models;
 
 namespace SistemaVenta.BLL.Implementacion
 {
-  internal class ProductoService : IProductoService
+  public class ProductoService : IProductoService
   {
     private readonly IGenericRepository<Producto> _repositorio;
     private readonly IFireBaseService _fireBaseServicio;
@@ -79,6 +79,11 @@ namespace SistemaVenta.BLL.Implementacion
         productoParaEditar.Stock = entidad.Stock;
         productoParaEditar.Precio = entidad.Precio;
         productoParaEditar.EsActivo = entidad.EsActivo;
+
+        if(productoParaEditar.NombreImagen == "")
+          productoParaEditar.NombreImagen = nombreImagen;
+        
+
 
         if(imagen != null)
         {
