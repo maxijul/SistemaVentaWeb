@@ -51,6 +51,10 @@ namespace SistemaVenta.IOC
 
       // Inyectamos la dependencia para la categoria
       services.AddScoped<ICategoriaService, CategoriaService>();
+
+      // Inyectamos la dependencia para los productos
+      services.AddScoped<IProductoService, IProductoService>();
+
     }
   }
 }
