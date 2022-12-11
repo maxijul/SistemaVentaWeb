@@ -55,7 +55,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         Producto productoCreado = await _productoServicio.Crear(productoMapeado, imagenStream, nombreImagen);
 
         vmProducto = _mapper.Map<VMProducto>(productoCreado);
-
+        
         genericResponse.Estado = true;
         genericResponse.Objeto = vmProducto;
 

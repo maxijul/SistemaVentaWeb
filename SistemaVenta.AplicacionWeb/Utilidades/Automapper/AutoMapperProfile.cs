@@ -85,7 +85,7 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.Automapper
           opt => opt.MapFrom(origen => origen.EsActivo == 1 ? true : false)
         )
         .ForMember(destino =>
-          destino.IdCategoria,
+          destino.IdCategoriaNavigation,
           opt => opt.Ignore()
         )
         .ForMember(destino =>

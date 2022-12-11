@@ -4,8 +4,7 @@ const MODELO_BASE = {
   idProducto: 0,
   codigoBarra: "",
   marca: "",
-  nombre: "",
-  idCategoria: "",
+  idCategoria: 0,
   stock: 0,
   urlImagen: "",
   precio: 0,
@@ -16,7 +15,7 @@ let tablaData;
 // FUNCION PRINCIPAL PARA MOSTRAR LA DATA
 $(document).ready(function () {
 
-  // FETCH A LA LISTA DE ROLES PARA MOSTRAR EN EL COMBOBOX
+  
 
   fetch("/Categoria/Lista")
     .then(response => {
@@ -95,7 +94,7 @@ function mostrarModal(modelo = MODELO_BASE) {
   $("#txtCodigoBarra").val(modelo.codigoBarra)
   $("#txtMarca").val(modelo.marca)
   $("#txtDescripcion").val(modelo.descripcion)
-  $("#cboCategoria").val(modelo.idCategoria === 0 ? $("#cboRol option:first").val() : modelo.idCategoria)
+  $("#cboCategoria").val(modelo.idCategoria === 0 ? $("#cboCategoria option:first").val() : modelo.idCategoria)
   $("#txtStock").val(modelo.stock)
   $("#txtPrecio").val(modelo.precio)
   $("#cboEstado").val(modelo.esActivo)
@@ -126,8 +125,8 @@ $("#btnGuardar").click(function () {
   modelo["idProducto"] = parseInt($("#txtId").val())
   modelo["codigoBarra"] = $("#txtCodigoBarra").val()
   modelo["marca"] = $("#txtMarca").val()
-  modelo["Descripcion"] = $("#txtDescripcion").val()
-  modelo["idCategoria"] = $("#cboCategoria").val()
+  modelo["descripcion"] = $("#txtDescripcion").val()
+  modelo["idCategoria"] = parseInt($("#cboCategoria").val())
   modelo["stock"] = $("#txtStock").val()
   modelo["precio"] = $("#txtPrecio").val()
   modelo["esActivo"] = $("#cboEstado").val()

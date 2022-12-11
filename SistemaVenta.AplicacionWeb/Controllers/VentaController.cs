@@ -56,7 +56,6 @@ namespace SistemaVenta.AplicacionWeb.Controllers
     public async Task<IActionResult> RegistrarVenta([FromBody] VMVenta modelo)
     {
       GenericResponse<VMVenta> genericResponse = new GenericResponse<VMVenta>();
-
       try
       {
         //TODO realizar logica de logeo
