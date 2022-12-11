@@ -62,7 +62,7 @@ namespace SistemaVenta.BLL.Implementacion
           v.FechaRegistro.Value.Date >= fechaInicioParseada.Date &&
           v.FechaRegistro.Value.Date <= fechaFinParseada.Date
         )
-          .Include(tipoDocumento => tipoDocumento.IdTipoDocumentoVentaNavigation)
+          .Include(tipoDocumentoVenta => tipoDocumentoVenta.IdTipoDocumentoVentaNavigation)
           .Include(usuario => usuario.IdUsuarioNavigation)
           .Include(detalleVenta => detalleVenta.DetalleVenta)
           .ToList();

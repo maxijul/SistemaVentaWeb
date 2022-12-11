@@ -1,8 +1,11 @@
-﻿let productosParaVenta = [];
+﻿// Variables globales para representar los productos de venta y el impuesto
+let productosParaVenta = [];
 let valorImpuesto = 0
 
+// Funcion principal para mostrar la data
 $(document).ready(function () {
 
+  // llamado a los tipos de documento de venta como factura, boleta
   fetch("/Venta/ListaTipoDocumentoVenta")
     .then(response => {
       return response.ok ? response.json() : Promise.reject(response);
@@ -17,6 +20,7 @@ $(document).ready(function () {
       }
     })
 
+  // llamado para obtener los valores del negocio como simbolo de moneda, porcentaje impuesto
   fetch("/Negocio/Obtener")
     .then(response => {
       return response.ok ? response.json() : Promise.reject(response);
@@ -35,6 +39,7 @@ $(document).ready(function () {
       }
     })
 
+  // Lógica para el buscador de productos
   $("#cboBuscarProducto").select2({
     ajax: {
       url: "/Venta/ObtenerProductos",
@@ -47,7 +52,7 @@ $(document).ready(function () {
         };
       },
       processResults: function (data) {
-      
+
         return {
           results: data.map((item) => (
             {
@@ -70,6 +75,8 @@ $(document).ready(function () {
 
 })
 
+
+// Template para el buscador de resultados
 function formatoResultados(data) {
   //esto es por defecto, ya que muestra el "buscando..."
   if (data.loading)
@@ -91,11 +98,13 @@ function formatoResultados(data) {
   return contenedor;
 }
 
-
+// Funcion para hacer que el cursor se ponga en el buscador cuando lo usamos
 $(document).on("select2:open", function () {
   document.querySelector(".select2-search__field").focus()
 })
 
+
+// Lógica para poder hacer una venta
 $("#cboBuscarProducto").on("select2:select", function (e) {
   const data = e.params.data;
 
@@ -150,6 +159,8 @@ $("#cboBuscarProducto").on("select2:select", function (e) {
 
 })
 
+// Logica para mostrar los datos del producto que se va a vender
+
 function mostrarPreciosProductos() {
   let total = 0
   let iva = 0
@@ -173,7 +184,7 @@ function mostrarPreciosProductos() {
         $("<td>").text(item.cantidad),
         $("<td>").text(`$${item.precio}`),
         $("<td>").text(`$${item.total}`)
-     )
+      )
     )
   })
 
@@ -186,6 +197,8 @@ function mostrarPreciosProductos() {
 
 }
 
+// Botones para eliminar
+
 $(document).on("click", "button.btn-eliminar", function () {
 
   const _idProducto = $(this).data("idProducto")
@@ -195,6 +208,8 @@ $(document).on("click", "button.btn-eliminar", function () {
 
 })
 
+
+// Lógica para terminar la venta haciendo click en el boton terminar venta
 $("#btnTerminarVenta").click(function () {
 
   if (productosParaVenta.length < 1) {
@@ -220,7 +235,7 @@ $("#btnTerminarVenta").click(function () {
     method: "POST",
     headers: { "Content-Type": "application/json; charset=utf-8" },
     body: JSON.stringify(venta)
-   })
+  })
     .then(response => {
       $("#btnTerminarVenta").LoadingOverlay("hide")
       return response.ok ? response.json() : Promise.reject(response);
