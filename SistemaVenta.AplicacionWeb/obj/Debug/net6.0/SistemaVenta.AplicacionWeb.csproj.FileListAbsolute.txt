@@ -291,3 +291,7 @@ D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\ne
 D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Firebase.Storage.dll
 D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.dll
 D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Utilidades\LibreriaPDF\libwkhtmltox.dll
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Utilidades\LibreriaPDF\libwkhtmltox.dylib
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\Utilidades\LibreriaPDF\libwkhtmltox.so
+D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb\bin\Debug\net6.0\DinkToPdf.dll

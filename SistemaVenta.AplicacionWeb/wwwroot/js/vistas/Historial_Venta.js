@@ -137,6 +137,9 @@ $("#tbventa tbody").on("click", ".btn-info", function () {
 
   })
 
+  $("#linkImprimir").attr("href", `/Venta/MostrarPDFVenta?numeroVenta=${data.numeroVenta}`)
+
+
   $("#modalData").modal("show");
 
 })
