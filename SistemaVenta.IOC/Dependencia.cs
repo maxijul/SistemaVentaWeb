@@ -61,6 +61,9 @@ namespace SistemaVenta.IOC
       // Inyectamos la dependencia para los tipos de Ventas
       services.AddScoped<IVentaService, VentaService>();
 
+      // Inyectamos la dependencia para el DashBoard
+      services.AddScoped<IDashBoardService, DashBoardService>();
+
     }
   }
 }
