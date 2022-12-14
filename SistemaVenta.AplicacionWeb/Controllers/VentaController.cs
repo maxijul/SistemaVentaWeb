@@ -6,9 +6,11 @@ using SistemaVenta.BLL.Interfaces;
 using SistemaVenta.Entity.Models;
 using DinkToPdf;
 using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SistemaVenta.AplicacionWeb.Controllers
 {
+  [Authorize]
   public class VentaController : Controller
   {
     private readonly ITipoDocumentoVentaService _tipoDocumentoVentaServicio;
