@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\ProyectosVisualStudio\SistemaVentaWeb\SistemaVenta.AplicacionWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/ProyectosVisualStudio/SistemaVentaWeb/SistemaVenta.AplicacionWeb/Views/Acceso/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ProyectosVisualStudio/SistemaVentaWeb/SistemaVenta.AplicacionWeb/Views/Acceso/RestablecerClave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXFJlc3RhYmxlY2VyQ2xhdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ProyectosVisualStudio/SistemaVentaWeb/SistemaVenta.AplicacionWeb/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -3,11 +3,20 @@ using SistemaVenta.AplicacionWeb.Utilidades.Automapper;
 using SistemaVenta.AplicacionWeb.Utilidades.Extensiones;
 using DinkToPdf;
 using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Añadimos la utilizacion de cookies
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+  .AddCookie(option =>
+  {
+    option.LoginPath = "/Acceso/Login";
+    option.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+  });
 
 // A traves del metodo InyectarDependencia se agrega la funcionalidad que creamos en la clase Dependencia
 builder.Services.InyectarDependencia(builder.Configuration);
@@ -31,10 +40,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Acceso}/{action=Login}/{id?}");
 
 app.Run();
